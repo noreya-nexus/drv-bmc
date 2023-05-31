@@ -1,6 +1,6 @@
 [package]
 name = "nexus-drv-bmc"
-version = "0.15.0"
+version = "1.0.0"
 authors = ["Richard Schleich <rs@noreya.tech>", "Philipp Polzhofer <pp@noreya.tech>"]
 edition = "2021"
 license = "GPL-3.0-only"

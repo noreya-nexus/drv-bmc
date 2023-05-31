@@ -32,7 +32,7 @@ fn main() {
 
     let check = SdbpkCheck {
         major: 1,
-        minor: 1,
+        minor: 3,
         patch: 0
     };
 
@@ -82,7 +82,7 @@ fn main() {
         break;
     }
     let _ = sd_notify::notify(false, &[NotifyState::Stopping]);
-    sleep(Duration::from_secs(3));
+    sleep(Duration::from_secs(3)); // Wait some time to let all the threads stop...
     let _ = sd_notify::notify(false, &[NotifyState::Status("Service stopped successfully")]);
     info!("Driver service stopped")
 }

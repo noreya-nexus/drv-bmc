@@ -20,7 +20,7 @@ cd builddeb/
 mkdir -p "$PACKAGE_NAME/lib/systemd/system/"
 mkdir -p "$PACKAGE_NAME/usr/bin/"
 
-cp ../nexus-drv-bmc.service "$PACKAGE_NAME/lib/systemd/system/"
+cp ../"$PACKAGE".service "$PACKAGE_NAME/lib/systemd/system/"
 if [ -f "../target/release/$PACKAGE" ]; then
   cp ../target/release/$PACKAGE "$PACKAGE_NAME/usr/bin/"
 else

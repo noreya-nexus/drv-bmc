@@ -34,5 +34,9 @@ docker run --platform linux/arm64 -t --rm -w "$PWD" -v "$PWD:$PWD":rw,z rust-cro
 docker run --platform linux/arm64 -t --rm -w "$PWD" -v "$PWD:$PWD":rw,z rust-cross-build ./makedeb_github.sh
 ```
 
+## Packaging
+We do not build Debian packages on Github because the aarch64 architecture is not supported.  
+Please check the [packaging guide](https://doc.noreya-nexus.tech/en/technical-details/packaging/guide/) for details.
+
 ## License
 This driver is licensed under [GPLv3](LICENSE).
